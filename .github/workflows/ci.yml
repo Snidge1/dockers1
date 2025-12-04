@@ -14,6 +14,7 @@ name: Build Docker image
 uses: docker/build-push-action@v5
 with:
   context: .
-  file: ./Dockerfile# Note: push is set to false, meaning we only test the build
+  file: ./Dockerfile# Note: 
+  #push is set to false, meaning we only test the build
   push: false
   tags: my-api-app:latest
